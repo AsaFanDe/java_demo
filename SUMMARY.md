@@ -6,3 +6,5 @@
   * [Java基础之运算符](java-dos/java-ji-chu-zhi-yun-suan-fu.md)
   * [Java基础之异常类](java-dos/java-ji-chu-zhi-yi-chang-lei.md)
 * [Java\_thread](thread-dos/README.md)
+  * [Java线程精讲](thread-dos/java-xian-cheng-jing-jiang.md)
+
