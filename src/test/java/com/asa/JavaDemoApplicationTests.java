@@ -1,16 +1,24 @@
 package com.asa;
 
 import org.junit.Test;
-import org.junit.runner.RunWith;
-import org.springframework.boot.test.context.SpringBootTest;
-import org.springframework.test.context.junit4.SpringRunner;
 
-@RunWith(SpringRunner.class)
-@SpringBootTest
+
 public class JavaDemoApplicationTests {
 
 	@Test
 	public void contextLoads() {
+		System.out.println(this.tryFinally());
+	}
+
+	private int tryFinally() {
+		int i = 0;
+		try {
+			i++;
+			return i;
+		}finally {
+			System.out.println("finally block");
+			i++;
+		}
 	}
 
 }
