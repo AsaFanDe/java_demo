@@ -21,4 +21,12 @@ public class JavaDemoApplicationTests {
 		}
 	}
 
+	@Test
+	public void test() {
+		float f = 2.2f;
+		double d = (double) f;
+		System.out.println(f);
+		System.out.println(d);
+	}
+
 }

@@ -12,10 +12,15 @@ import org.springframework.context.annotation.Configuration;
 @Configuration
 public class TaskConfig {
 
-    @Bean
-    public Task task() {
-        return new Task("0/5 * * * * ?", new AsaTask("任务一"));
+    @Bean(name="task1")
+    public Task task1() {
+        return new Task("0 0/30 * * * ?", new AsaTask("任务一", false));
     }
+
+   /* @Bean("task2")
+    public Task task2() {
+        return new Task("0/5 * * * * ?", new AsaTask("任务二"));
+    }*/
 
    /* @Bean
     public Task task2() {

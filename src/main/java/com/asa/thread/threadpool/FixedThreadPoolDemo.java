@@ -1,6 +1,7 @@
 package com.asa.thread.threadpool;
 
-import java.nio.channels.ServerSocketChannel;
+
+import java.util.concurrent.Executors;
 
 /**
  * @Description
@@ -9,4 +10,13 @@ import java.nio.channels.ServerSocketChannel;
  * @Version 1.0
  **/
 public class FixedThreadPoolDemo {
+
+    public static void main(String[] args) {
+        Executors.newCachedThreadPool();
+        Executors.newFixedThreadPool(1);
+        Executors.newSingleThreadExecutor();
+        Executors.newScheduledThreadPool(1);
+        Executors.newWorkStealingPool(2);
+        Executors.newSingleThreadScheduledExecutor();
+    }
 }
