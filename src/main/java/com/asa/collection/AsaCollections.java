@@ -32,12 +32,17 @@ public class AsaCollections {
     }
 
     public static void main(String[] args) {
-        String key = "Asas";
+        /*String key = "Asas";
         int h = key.hashCode();
         System.out.println(h);
         System.out.println((h) ^ (h >>> 16));
         System.out.println(1 << 30);
         System.out.println(111 & h);
-        System.out.println(112 & h);
+        System.out.println(112 & h);*/
+        List<String> list = new ArrayList<>();
+        list.add("555555");
+        list.add("6666666666");
+        list.add("0000000");
+        System.out.println(list.toString());
     }
 }

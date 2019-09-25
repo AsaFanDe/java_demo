@@ -9,7 +9,7 @@ import java.util.concurrent.Executors;
  * @Author Asa
  * @Version 1.0
  **/
-public class FixedThreadPoolDemo {
+public class ThreadPoolDemo {
 
     public static void main(String[] args) {
         Executors.newCachedThreadPool();

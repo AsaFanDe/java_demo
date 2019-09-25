@@ -13,11 +13,11 @@ import java.util.Optional;
  * @Version 1.0
  **/
 @Slf4j
-public class OptionalDemo {
+public class    OptionalDemo {
 
     public static void main(String[] args){
         OptionalDemo demo = new OptionalDemo();
-        log.info(demo.orElseGetTest().toString());
+        demo.mapTest();
     }
 
     /**
@@ -85,10 +85,19 @@ public class OptionalDemo {
        return user;
     }
 
-    public User mapTest(){
-        Thread thread = new Thread(() -> {System.out.println("1111111111111");});
-        thread.start();
-        return null;
+    public void mapTest(){
+        Role role = new Role(null, "管理员");
+        User user = new User(null, "Asa", "123456", role);
+
+        User user0 = new User(null, "Asa", "123456");
+        User user1 = null;
+
+        Optional.ofNullable(user0)
+                .map(u -> {return u.getRole();})
+                .map(r -> {return r.getId();})
+                .ifPresent(n -> {
+                    System.out.println(n);
+                });
     }
 
 }
