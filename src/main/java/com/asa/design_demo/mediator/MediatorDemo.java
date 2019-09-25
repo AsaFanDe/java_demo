@@ -1,9 +1,10 @@
 package com.asa.design_demo.mediator;
 
 /**
+ * 中介者模式
  * Created by AsaFan on 2018-08-22.
  */
-public class Test {
+public class MediatorDemo {
 
     public static void main(String[] args) {
         CDRom cdRom = new CDRom();

@@ -20,12 +20,4 @@ public class AsaObserver implements Observer{
         System.out.println(name + "-" +a.getMsg());
     }
 
-    public static void main(String[] args){
-        AsaObservable asa = new AsaObservable();
-        AsaObserver arg0 = new AsaObserver("Asa");
-        AsaObserver arg1 = new AsaObserver("Fan");
-        asa.addObserver(arg0);
-        asa.addObserver(arg1);
-        asa.sendMsg("Hello");
-    }
 }

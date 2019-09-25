@@ -1,6 +1,6 @@
 package com.asa.design_demo.mediator;
 
-/**中介者
+/**中介者模式
  * Created by AsaFan on 2018-08-22.
  */
 public class Mediator {
