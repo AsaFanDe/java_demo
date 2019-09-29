@@ -4,7 +4,8 @@ import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantReadWriteLock;
 
 /**
- * @Description
+ * @Description 读写锁案例分析
+ * 在多线程下面，读写锁如何在同一个队列下面顺序执行？
  * @Date 2019-09-26 15:01
  * @Author Asa
  * @Version 1.0
